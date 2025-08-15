@@ -1,22 +1,38 @@
 {
   "version": 2,
   "name": "foxai-api-selector",
+  "description": "FoxAI API选择器 - 移动端智能API管理平台",
+  
   "builds": [
     {
       "src": "*.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/static"
     }
   ],
+  
   "routes": [
     {
       "src": "/",
       "dest": "/index.html"
     },
     {
+      "src": "/demo",
+      "dest": "/demo.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
   ],
+  
   "headers": [
     {
       "source": "/(.*)",
@@ -36,10 +52,41 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
   ],
+  
   "functions": {},
-  "env": {}
+  "env": {},
+  
+  "regions": ["hkg1"],
+  
+  "github": {
+    "enabled": true,
+    "silent": true
+  },
+  
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
 }
