@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "foxai-api-selector",
-  "description": "FoxAI API选择器 - 移动端智能API管理平台",
   
   "builds": [
     {
