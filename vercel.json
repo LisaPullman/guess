@@ -17,18 +17,14 @@
     }
   ],
   
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/index.html"
+      "source": "/",
+      "destination": "/index.html"
     },
     {
-      "src": "/demo",
-      "dest": "/demo.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/demo",
+      "destination": "/demo.html"
     }
   ],
   
@@ -73,18 +69,8 @@
     }
   ],
   
-  "env": {},
+  "cleanUrls": true,
+  "trailingSlash": false,
   
-  "regions": ["hkg1"],
-  
-  "github": {
-    "enabled": true,
-    "silent": true
-  },
-  
-  "git": {
-    "deploymentEnabled": {
-      "main": true
-    }
-  }
+  "regions": ["hkg1"]
 }
