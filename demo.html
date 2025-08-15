@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoxAI API选择器 - 演示页面</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .demo-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .demo-title {
+            color: #FF6B35;
+            font-size: 24px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .demo-button {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+        .demo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-section">
+            <div class="brand-logo">
+                <div class="fox-icon">🦊</div>
+                <h1 class="brand-title">FoxAI API选择器</h1>
+                <p class="brand-subtitle">智能API管理平台演示</p>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="demo-title">🚀 主要功能</h2>
+            <ul class="feature-list">
+                <li>🔐 <strong>密码验证</strong> - 安全访问控制</li>
+                <li>🎯 <strong>随机选择</strong> - 智能API分配</li>
+                <li>📱 <strong>移动优化</strong> - 完美适配手机</li>
+                <li>💾 <strong>历史记录</strong> - 智能数据管理</li>
+                <li>⌨️ <strong>快捷键</strong> - 提升操作效率</li>
+                <li>🎨 <strong>品牌设计</strong> - FoxAI专属风格</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="demo-title">📱 移动端特性</h2>
+            <ul class="feature-list">
+                <li>📱 <strong>响应式设计</strong> - 适配所有屏幕尺寸</li>
+                <li>👆 <strong>触摸优化</strong> - 流畅的触摸体验</li>
+                <li>🔒 <strong>安全防护</strong> - 防止双击缩放</li>
+                <li>💫 <strong>动画效果</strong> - 优雅的视觉反馈</li>
+                <li>🌐 <strong>PWA支持</strong> - 可添加到主屏幕</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="demo-title">🚀 部署选项</h2>
+            <div style="text-align: center;">
+                <a href="index.html" class="demo-button">📱 体验应用</a>
+                <a href="DEPLOY.md" class="demo-button">📖 部署指南</a>
+                <a href="README.md" class="demo-button">📚 完整文档</a>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="demo-title">🔧 技术架构</h2>
+            <div class="code-block">
+项目结构:
+├── index.html      # 主应用页面
+├── style.css       # 响应式样式
+├── script.js       # 核心功能
+├── vercel.json     # Vercel配置
+├── demo.html       # 演示页面
+├── README.md       # 项目说明
+└── DEPLOY.md       # 部署指南
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="demo-title">🌐 Vercel部署优势</h2>
+            <ul class="feature-list">
+                <li>⚡ <strong>全球CDN</strong> - 极速访问体验</li>
+                <li>🔒 <strong>自动HTTPS</strong> - 安全加密传输</li>
+                <li>📱 <strong>移动优化</strong> - 完美适配手机</li>
+                <li>🔄 <strong>自动部署</strong> - Git推送即更新</li>
+                <li>📊 <strong>性能监控</strong> - 实时性能数据</li>
+                <li>🌍 <strong>边缘计算</strong> - 就近访问优化</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="demo-title">📞 快速开始</h2>
+            <p style="text-align: center; margin-bottom: 20px;">
+                立即体验FoxAI API选择器的强大功能！
+            </p>
+            <div style="text-align: center;">
+                <a href="index.html" class="demo-button" style="font-size: 18px; padding: 15px 30px;">
+                    🚀 开始使用
+                </a>
+            </div>
+        </div>
+
+        <div class="footer" style="text-align: center; margin-top: 40px;">
+            <p>Powered by <strong>FoxAI</strong> 🦊</p>
+            <p class="copyright">© 2024 FoxAI. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

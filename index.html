@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoxAI API选择器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 密码验证界面 -->
+    <div id="passwordScreen" class="screen">
+        <div class="container">
+            <div class="brand-logo">
+                <div class="fox-icon">🦊</div>
+                <h1 class="brand-title">FoxAI</h1>
+                <p class="brand-subtitle">智能API管理平台</p>
+            </div>
+            <div class="auth-section">
+                <h2>🔐 访问验证</h2>
+                <p>请输入访问密码</p>
+                <input type="password" id="passwordInput" placeholder="请输入密码" maxlength="10">
+                <button id="submitBtn" onclick="checkPassword()">确认</button>
+                <div id="errorMsg" class="error-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主界面 -->
+    <div id="mainScreen" class="screen hidden">
+        <div class="container">
+            <div class="header-actions">
+                <button id="logoutBtn" onclick="logout()" class="logout-btn">🚪 退出</button>
+            </div>
+            <div class="brand-header">
+                <div class="fox-icon">🦊</div>
+                <h1>FoxAI API选择器</h1>
+                <p>智能随机选择，高效管理您的API密钥</p>
+            </div>
+            <button id="selectBtn" onclick="selectRandomAPI()">🎲 随机选择</button>
+            <div id="result" class="result-box hidden">
+                <h3>选中的API:</h3>
+                <div id="selectedAPI" class="api-display"></div>
+                <button id="copyBtn" onclick="copyToClipboard()">📋 复制</button>
+            </div>
+            <div id="history" class="history-box">
+                <div class="history-header">
+                    <h3>选择历史:</h3>
+                    <button id="clearHistoryBtn" onclick="clearHistory()" class="clear-btn">🗑️ 清空</button>
+                </div>
+                <div id="historyList"></div>
+            </div>
+            <div class="footer">
+                <p>Powered by <strong>FoxAI</strong> 🦊</p>
+                <p class="copyright">© 2024 FoxAI. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
